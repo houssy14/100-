@@ -1,0 +1,10 @@
+le tri par insertion est un algorithme de tri simple qui fonctionne en insérant à plusieurs reprises des éléments d'une partie non triée de la liste dans la position correcte dans la partie triée. Il parcourt la liste, comparant chaque élément avec les éléments de la partie triée et les décalant vers la droite jusqu'à ce qu'il trouve la position correcte pour l'insertion.
+ Disons que nous avons une liste non triée d'entiers : [8, 3, 1, 5, 2].
+
+Dans la première itération, le premier élément, 8, est considéré comme la partie triée. Le deuxième élément, 3, est comparé à 8 et comme il est plus petit, il est décalé vers la gauche, ce qui donne [3, 8, 1, 5, 2].
+Dans la seconde itération, la partie triée est constituée des deux premiers éléments : [3, 8]. L'élément suivant, 1, est comparé à 8 et 3. Il est plus petit que les deux, il est donc décalé vers la gauche, ce qui donne [1, 3, 8, 5, 2].
+La troisième itération compare l'élément suivant, 5, avec 8, 3 et 1. Elle trouve la position correcte entre 3 et 8 et l'y insère, ce qui donne [1, 3, 5, 8, 2].
+Dans l'itération finale, le dernier élément, 2, est comparé à 8, 5, 3 et 1. Il est plus petit que tous et est décalé vers la gauche jusqu'à ce qu'il atteigne le début de la liste, ce qui donne la liste triée : [1, 2, 3, 5, 8].
+
+Consider an example: arr[]: {12, 11, 13, 5, 6}
+
